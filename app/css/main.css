@@ -53,18 +53,15 @@ header .video-button {
           border-radius: 25px;
   font-size: 1.5em;
   color: #26272d;
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
 
-div.mfp-content {
-  text-align: center; }
-
-div.mfp-content .mfp-close {
-  background: rgba(255, 255, 255, 0.3); }
-
-#popup-video {
-  position: relative;
-  display: inline-block;
-  max-width: 90; }
+header .video-button:hover {
+  background-color: #4e93f1;
+  border: 1px solid #4e93f1;
+  color: white; }
 
 @media screen and (max-width: 1660px) {
   header {
