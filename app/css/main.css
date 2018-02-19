@@ -4,11 +4,13 @@ header {
   -webkit-background-size: 100% 100%;
           background-size: 100%;
   position: relative;
-  min-height: 70.65em;
-  padding-top: 2.5em; }
+  min-height: 70.65em; }
 
 header {
   text-align: center; }
+
+header nav {
+  margin-top: 2.5em; }
 
 header nav ul li {
   margin: 0em 0.75em 0em 0.75em;
@@ -29,7 +31,16 @@ header .header-apple-button {
   background-color: #267df4;
   -webkit-border-radius: 35px;
           border-radius: 35px;
-  padding: 0.75em 1.25em 0.70em 1.25em; }
+  padding: 0.75em 1.25em 0.70em 1.25em;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+
+header .header-apple-button:hover {
+  background-color: #19519e;
+  color: white;
+  -webkit-box-shadow: 0px 0px 100px #b2b2b2;
+          box-shadow: 0px 0px 100px #b2b2b2; }
 
 header .header-apple-button img {
   margin-right: 0.5em; }
@@ -62,6 +73,31 @@ header .video-button:hover {
   background-color: #4e93f1;
   border: 1px solid #4e93f1;
   color: white; }
+
+#features-section {
+  padding: 5% 0% 5% 0%; }
+  #features-section h3 {
+    padding: 3.5% 0% 0% 0%;
+    color: #26272d; }
+  #features-section p {
+    color: #8c8f94;
+    padding-top: 2.5%; }
+
+#white-iphone-section {
+  padding: 5% 0% 0% 0%; }
+  #white-iphone-section .row {
+    width: 100%; }
+    #white-iphone-section .row h1 {
+      font-family: Tahoma, Verdana, Segoe, sans-serif;
+      font-size: 3em;
+      color: #26272d;
+      width: 30%;
+      padding: 15% 0% 4% 0%; }
+    #white-iphone-section .row p {
+      color: #8c8f94;
+      font-size: 1.40em;
+      width: 55%;
+      padding: 0% 0% 2% 0%; }
 
 @media screen and (max-width: 1660px) {
   header {
@@ -110,4 +146,8 @@ header .video-button:hover {
     font-size: 1.1em;
     padding: 1em 5em 2em 5em !important; }
   header .video-button {
-    font-size: 1.25em; } }
+    font-size: 1.25em; }
+  #features-section {
+    text-align: center; }
+    #features-section p:nth-child(4) {
+      padding: 0% 0% 10% 0%; } }
