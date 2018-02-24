@@ -1,3 +1,6 @@
+h1 {
+  color: #26272d; }
+
 header {
   background-image: url("../img/Header/background.jpg");
   background-repeat: no-repeat;
@@ -81,6 +84,7 @@ header .video-button:hover {
     color: #26272d; }
   #features-section p {
     color: #8c8f94;
+    font-size: 1.3em;
     padding-top: 2.5%; }
 
 #white-iphone-section {
@@ -88,16 +92,104 @@ header .video-button:hover {
   #white-iphone-section .row {
     width: 100%; }
     #white-iphone-section .row h1 {
-      font-family: Tahoma, Verdana, Segoe, sans-serif;
+      font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
       font-size: 3em;
       color: #26272d;
       width: 30%;
       padding: 15% 0% 4% 0%; }
     #white-iphone-section .row p {
       color: #8c8f94;
-      font-size: 1.40em;
+      font-size: 1.30em;
       width: 55%;
       padding: 0% 0% 2% 0%; }
+    #white-iphone-section .row .col-lg-6 button:nth-child(4) {
+      color: white;
+      background-color: #267df4;
+      border: 1px solid #267df4;
+      -webkit-border-radius: 15px;
+              border-radius: 15px;
+      padding: 0.50em 1em 0.50em 1.25em;
+      margin-top: 1em;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
+    #white-iphone-section .row .col-lg-6 button:nth-child(4):hover {
+      background-color: #5e9df4;
+      border: 1px solid #5e9df4;
+      color: white; }
+    #white-iphone-section .row .col-lg-6 button img {
+      padding-left: 2em; }
+    #white-iphone-section .row .col-lg-6 button:nth-child(5) {
+      color: #26272d;
+      background-color: #ffffff;
+      border: 2px solid #ebebeb;
+      -webkit-border-radius: 15px;
+              border-radius: 15px;
+      padding: 0.50em 1em 0.50em 1em;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
+    #white-iphone-section .row .col-lg-6 button:nth-child(5):hover {
+      background-color: #ebebeb;
+      border: 2px solid #cfcfcf; }
+
+#locations-section {
+  padding: 10% 0% 10% 0%; }
+  #locations-section .row {
+    width: 100%; }
+  #locations-section .row .col-xs-11 {
+    padding: 3.5% 0% 0% 22%; }
+    #locations-section .row .col-xs-11 h1 {
+      padding: 0em 5em 1em 0em;
+      font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif; }
+    #locations-section .row .col-xs-11 p {
+      color: #8c8f94;
+      font-size: 1.30em;
+      width: 90%;
+      padding: 0em 0em 1em 0em; }
+    #locations-section .row .col-xs-11 h6 {
+      padding-top: 2.5em;
+      padding-bottom: 0.5em;
+      text-transform: uppercase; }
+  #locations-section .row .col-xs-12 img {
+    width: 100%; }
+
+#screen-section {
+  background-color: #f5f5f8;
+  background-image: url("../img/Screen/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px;
+  margin: 0;
+  padding: 0; }
+  #screen-section .row {
+    width: 100%; }
+  #screen-section .img-mount {
+    margin-right: 1.12em; }
+
+.swiper-container {
+  width: 100%;
+  height: 100%; }
+
+.swiper-slide {
+  background-color: none;
+  text-align: center;
+  font-size: 18px;
+  background: none;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-left: 0.1em; }
 
 @media screen and (max-width: 1660px) {
   header {
@@ -109,6 +201,10 @@ header .video-button:hover {
     font-size: 1.3em;
     padding: 1em 5em 3.5em 5em !important; } }
 
+@media screen and (max-width: 1480px) {
+  #locations-section .row .col-xs-11 {
+    padding: 3.5% 0% 0% 12%; } }
+
 @media screen and (max-width: 1400px) {
   header .header-main-logo {
     margin-left: 7em;
@@ -118,7 +214,11 @@ header .video-button:hover {
     margin-top: 3em; }
   header p {
     font-size: 1.25em;
-    padding: 1em 5em 2.5em 5em !important; } }
+    padding: 1em 5em 2.5em 5em !important; }
+  #white-iphone-section {
+    padding: 5% 0% 0% 0%; }
+    #white-iphone-section .row h1 {
+      width: 40%; } }
 
 @media screen and (max-width: 1200px) {
   header .header-main-logo {
@@ -131,7 +231,11 @@ header .video-button:hover {
     font-size: 1.25em;
     padding: 1em 5em 2em 5em !important; }
   header .video-button {
-    font-size: 1.25em; } }
+    font-size: 1.25em; }
+  #white-iphone-section {
+    padding: 5% 0% 0% 0%; }
+    #white-iphone-section .row .col-xs-3 {
+      opacity: 0.40; } }
 
 @media screen and (max-width: 991px) {
   header nav ul li a {
@@ -150,4 +254,20 @@ header .video-button:hover {
   #features-section {
     text-align: center; }
     #features-section p:nth-child(4) {
-      padding: 0% 0% 10% 0%; } }
+      padding: 0% 0% 10% 0%; }
+  #white-iphone-section {
+    padding: 5% 0% 0% 0%; }
+    #white-iphone-section .row .col-xs-3 {
+      opacity: 0.2; }
+    #white-iphone-section .row h1 {
+      padding-top: 3em;
+      width: 100%; }
+    #white-iphone-section .row .col-xs-7 {
+      margin-left: 3em; }
+    #white-iphone-section .row .col-xs-7 p {
+      width: 75%; }
+  #locations-section .row .col-xs-12 img {
+    width: 75%;
+    margin-left: 15%; }
+  #locations-section .row .col-xs-11 {
+    padding: 3.5% 0% 0% 25%; } }

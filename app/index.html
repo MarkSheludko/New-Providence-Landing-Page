@@ -8,17 +8,21 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="/js/slick/slick.scss"/>
 	<link rel="stylesheet" type="text/css" href="/js/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="/js/slick/slick-theme.scss"/>
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-	<header>
+	<header class="animation-div">
 		<div class="container-fluid">
 			<div class="container">
 			<nav>
@@ -43,7 +47,7 @@
 		</div>
 		</div>
 	</header>
-	<section id="features-section">
+	<section id="features-section" class="animation-div">
 		<div class="container">
 			<div class="col-lg-6 col-md-6 col-xs-12">
 				<img src="img/Features/lock-icon.png">
@@ -59,19 +63,58 @@
 			</div>
 		</div>
 	</section>
-	<section id="white-iphone-section">
+	<section id="white-iphone-section" class="animation-div">
 		<div class="row">
-			<div class="col-lg-6">
-				<img src="img/iPhone/iphone.png">
+			<div class="col-lg-6 col-md-6 col-xs-3">
+				<img class="wow fadeIn" src="img/iPhone/iphone.png">
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 col-md-6 col-xs-7">
 				<h1>Your day is protected</h1>
 				<p>There have not been any since we have lived here, said my mother.</p>
 				<p>We thought - Mr. Copperfield thought - it was quite a large rookery, but the nests were very old ones, and the birds have deserted them a long while.</p>
+				<button>Try to hack us <img src="img/iPhone/arrow-icon.png"></button>
+				<button>Learn more</button>
 			</div>
 		</div>
 	</section>
-<script src="js/libs.min.js"></script>
-<script src="js/common.js"></script>
+	<section id="locations-section" class="animation-div">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-xs-11">
+				<h1>We are almost everywhere</h1>
+				<p>Now the races of these two have been for some ages utterly extinct, and besides to discourse aby further of them would not be at all my purpose.</p>
+				<p>Thus much I thought proper to tell you in relation to yourselfm and to the trust I reposed in you.</p>
+				<h6><b>Partners</b></h6>
+				<a href="#"><img src="img/Location/dropbox-loog.png"></a>
+				<a href="#"><img src="img/Location/elephant-logo.png"></a>
+			</div>
+			<div class="col-lg-6 col-md-6 col-xs-12">
+				<img class="wow fadeIn" src="img/Location/world.png">
+			</div>
+		</div>
+	</section>
+	<section id="screen-section" class="animation-div">
+			<!-- Swiper -->
+		  <div class="swiper-container">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide"><img src="img/Screen/screen1.png"></div>
+			  <div class="swiper-slide"><img src="img/Screen/screen2.png"></div>
+			  <div class="swiper-slide"><img src="img/Screen/screen3.png"></div>
+			  <div class="swiper-slide"><img src="img/Screen/screen4.png"></div>
+			  <div class="swiper-slide"><img class="img-mount" src="img/Screen/screen5.png"></div>
+			</div>
+		  </div>
+	</section>
+<script>
+	//Swiper
+	var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+</script>
 </body>
 </html>

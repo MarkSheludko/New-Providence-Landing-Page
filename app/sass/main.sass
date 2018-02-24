@@ -1,3 +1,6 @@
+//DEFAULT
+h1
+	color: #26272d
 //HEADER SECTION
 header
 	background-image: url("../img/Header/background.jpg")
@@ -79,6 +82,7 @@ header .video-button:hover
 		color: #26272d
 	p
 		color: #8c8f94
+		font-size: 1.3em
 		padding-top: 2.5%
 
 //WHITE IPHONE SECTION
@@ -87,17 +91,104 @@ header .video-button:hover
 	.row
 		width: 100%
 		h1
-			font-family: Tahoma, Verdana, Segoe, sans-serif
+			font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif
 			font-size: 3em
 			color: #26272d
 			width: 30%
 			padding: 15% 0% 4% 0%
+		
 		p
 			color: #8c8f94
-			font-size: 1.40em
+			font-size: 1.30em
 			width: 55%
 			padding: 0% 0% 2% 0%
+		.col-lg-6 button:nth-child(4)
+			color: white
+			background-color: #267df4
+			border: 1px solid #267df4
+			border-radius: 15px
+			padding: 0.50em 1em 0.50em 1.25em
+			margin-top: 1em
+			transition: 1s
+		.col-lg-6 button:nth-child(4):hover
+			background-color: #5e9df4
+			border: 1px solid #5e9df4
+			color: white
+		.col-lg-6 button img
+			padding-left: 2em
+		.col-lg-6 button:nth-child(5)
+			color: #26272d
+			background-color: #ffffff
+			border: 2px solid #ebebeb
+			border-radius: 15px
+			padding: 0.50em 1em 0.50em 1em
+			transition: 1s
+		.col-lg-6 button:nth-child(5):hover
+			background-color: #ebebeb
+			border: 2px solid #cfcfcf
 
+//LOCATION SECTION
+#locations-section
+	padding: 10% 0% 10% 0%
+	.row
+		width: 100%
+	.row .col-xs-11
+		padding: 3.5% 0% 0% 22%
+		h1
+			padding: 0em 5em 1em 0em
+			font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif
+		p
+			color: #8c8f94
+			font-size: 1.30em
+			width: 90%
+			padding: 0em 0em 1em 0em
+		h6
+			padding-top: 2.5em
+			padding-bottom: 0.5em
+			text-transform: uppercase
+	.row .col-xs-12
+		img
+			width: 100%
+
+//Iphone screen section
+#screen-section
+	background-color: #f5f5f8
+	background-image: url("../img/Screen/bg.jpg")
+	background-repeat: no-repeat
+	background-position: center
+	height: 1000px
+	margin: 0
+	padding: 0
+	.row
+		width: 100%
+	.img-mount
+		margin-right: 1.12em
+
+.swiper-container
+	width: 100%
+	height: 100%
+
+.swiper-slide
+	background-color: none
+	text-align: center
+	font-size: 18px
+	background: none
+	/* Center slide text vertically */
+	display: -webkit-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	-webkit-justify-content: center
+	justify-content: center
+	-webkit-box-align: center
+	-ms-flex-align: center
+	-webkit-align-items: center
+	align-items: center
+	margin-left: 0.1em
+
+//MEDIA
 @media screen and (max-width: 1660px)
 	header
 		min-height: 46em
@@ -107,6 +198,10 @@ header .video-button:hover
 	header p
 		font-size: 1.3em
 		padding: 1em 5em 3.5em 5em!important
+@media screen and (max-width: 1480px)
+	#locations-section
+		.row .col-xs-11
+			padding: 3.5% 0% 0% 12%
 @media screen and (max-width: 1400px)
 	header .header-main-logo
 		margin-left: 7em
@@ -117,6 +212,10 @@ header .video-button:hover
 	header p
 		font-size: 1.25em
 		padding: 1em 5em 2.5em 5em!important
+	#white-iphone-section
+		padding: 5% 0% 0% 0%
+		.row h1
+			width: 40%
 @media screen and (max-width: 1200px)
 	header .header-main-logo
 		margin-left: 3.5em
@@ -129,6 +228,10 @@ header .video-button:hover
 		padding: 1em 5em 2em 5em!important
 	header .video-button
 		font-size: 1.25em
+	#white-iphone-section
+		padding: 5% 0% 0% 0%
+		.row .col-xs-3
+			opacity: 0.40
 @media screen and (max-width: 991px)
 	header nav ul li a
 		font-size: 1em
@@ -147,3 +250,21 @@ header .video-button:hover
 		text-align: center
 		p:nth-child(4)
 			padding: 0% 0% 10% 0%
+	#white-iphone-section
+		padding: 5% 0% 0% 0%
+		.row .col-xs-3
+			opacity: 0.2
+		.row h1
+			padding-top: 3em
+			width: 100%
+		.row .col-xs-7
+			margin-left: 3em
+		.row .col-xs-7 p
+			width: 75%
+	#locations-section
+		.row .col-xs-12
+			img
+				width: 75%
+				margin-left: 15%
+		.row .col-xs-11
+			padding: 3.5% 0% 0% 25%
