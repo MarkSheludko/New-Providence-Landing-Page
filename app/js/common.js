@@ -44,3 +44,4 @@ $('.magnific-youtube, .magnific-vimeo').magnificPopup({
   preloader: false,
   fixedContentPos: false
 });
+
