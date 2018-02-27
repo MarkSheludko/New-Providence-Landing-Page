@@ -202,27 +202,53 @@ header .video-button:hover {
   margin-left: 0.1em; }
 
 #screen-invite-section {
-  background-color: #f5f5f8; }
+  background-color: #f5f5f8;
+  padding: 10em 0em; }
   #screen-invite-section img {
-    margin-top: 15em;
     opacity: 0.5; }
   #screen-invite-section h1 {
     padding-top: 0.5em;
     padding-bottom: 0.75em; }
-  #screen-invite-section input {
-    width: 325px;
-    color: #3a3d4b;
-    border: 2px solid #d1d2d5;
-    -webkit-border-radius: 25px;
-            border-radius: 25px;
-    background-color: #f5f5f8;
-    padding: 1em 1em;
-    margin-top: 1em; }
   #screen-invite-section p {
-    margin-top: 7em; }
+    font-size: 1em;
+    margin-top: 4em; }
   #screen-invite-section a img {
     opacity: 1 !important;
     margin-top: 0 !important; }
+  #screen-invite-section .input-field {
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
+    border: 1px solid #d4d5d6;
+    width: 38%;
+    padding: 0.2em 0em;
+    margin-left: 31%;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s; }
+    #screen-invite-section .input-field input {
+      border: none;
+      color: #7f8082;
+      background-color: #f5f5f8;
+      padding: 0.5em 0em;
+      margin-left: 2%;
+      width: 40%; }
+    #screen-invite-section .input-field button {
+      border: 1px solid #6fc754;
+      background-color: #6fc754;
+      color: #ffffff;
+      -webkit-border-radius: 25px;
+              border-radius: 25px;
+      padding: 0.5em 1.5em;
+      margin-left: 22%;
+      -webkit-transition: 0.7s;
+      -o-transition: 0.7s;
+      transition: 0.7s; }
+      #screen-invite-section .input-field button:hover {
+        color: white;
+        background-color: #569941; }
+    #screen-invite-section .input-field img {
+      margin-top: 0 !important;
+      opacity: 1 !important; }
 
 .aligner {
   position: relative;
@@ -439,6 +465,50 @@ button {
       color: #26292c;
       font-size: 1.1em; }
 
+#subscribe-section {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 7em 0em; }
+  #subscribe-section h4 {
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+    display: none; }
+  #subscribe-section .input-field {
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
+    border: 1px solid #d4d5d6;
+    width: 23.5%;
+    padding: 0.2em 0em;
+    margin-left: 38.3%;
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s; }
+    #subscribe-section .input-field input {
+      border: none;
+      color: #7f8082;
+      padding: 0.5em 0em;
+      margin-left: 2.5%;
+      width: 60%; }
+    #subscribe-section .input-field button {
+      border: 1px solid #6fc754;
+      background-color: #6fc754;
+      color: #ffffff;
+      -webkit-border-radius: 25px;
+              border-radius: 25px;
+      padding: 0.5em 1.5em;
+      margin-left: 9.5%;
+      -webkit-transition: 0.7s;
+      -o-transition: 0.7s;
+      transition: 0.7s; }
+      #subscribe-section .input-field button:hover {
+        color: #40872a;
+        background-color: #ffffff; }
+  #subscribe-section p {
+    color: #8c8f94;
+    font-size: 0.9em; }
+
 #footer-section {
   padding-top: 4em;
   background-color: #ffffff; }
@@ -474,6 +544,20 @@ button {
     #footer-section .footer .col-lg-6 .made-with {
       float: right; }
 
+@media screen and (max-width: 1820px) {
+  #subscribe-section input {
+    margin-left: 1%;
+    width: 45% !important; }
+  #subscribe-section button {
+    margin-left: 23% !important; } }
+
+@media screen and (max-width: 1727px) {
+  #subscribe-section input {
+    margin-left: 1%;
+    width: 45% !important; }
+  #subscribe-section button {
+    margin-left: 13% !important; } }
+
 @media screen and (max-width: 1660px) {
   header {
     min-height: 46em; }
@@ -486,7 +570,9 @@ button {
 
 @media screen and (max-width: 1480px) {
   #locations-section .row .col-xs-11 {
-    padding: 3.5% 0% 0% 12%; } }
+    padding: 3.5% 0% 0% 12%; }
+  #subscribe-section button {
+    margin-left: 15% !important; } }
 
 @media screen and (max-width: 1400px) {
   header .header-main-logo {
@@ -501,7 +587,22 @@ button {
   #white-iphone-section {
     padding: 5% 0% 0% 0%; }
     #white-iphone-section .row h1 {
-      width: 40%; } }
+      width: 40%; }
+  #subscribe-section input {
+    margin-left: 1%;
+    width: 45% !important; }
+  #subscribe-section button {
+    margin-left: 9% !important; } }
+
+@media screen and (max-width: 1292px) {
+  #subscribe-section .input-field {
+    width: 30% !important;
+    margin-left: 35%; }
+  #subscribe-section input {
+    margin-left: 1%;
+    width: 45% !important; }
+  #subscribe-section button {
+    margin-left: 16% !important; } }
 
 @media screen and (max-width: 1200px) {
   header .header-main-logo {
@@ -527,6 +628,13 @@ button {
     margin-top: 4em; }
     #footer-section .col-lg-2 ul li {
       display: block !important; } }
+
+@media screen and (max-width: 1084px) {
+  #subscribe-section input {
+    margin-left: 2% !important;
+    width: 45% !important; }
+  #subscribe-section button {
+    margin-left: 9% !important; } }
 
 @media screen and (max-width: 991px) {
   header nav ul li a {

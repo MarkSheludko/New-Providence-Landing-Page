@@ -117,14 +117,9 @@
 			<div class="container">
 				<img src="img/Header/main-logo.png">
 				<h1>Get it to your smartphone</h1>
-				<input placeholder="example@gmail.com">
-				<div class="aligner">
-					<button class="submitter">
-						<span class="text">Submit</span>
-						<span class="check">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.608 240.608"><path d="M208.79 29.972l31.818 31.82L91.763 210.637 0 118.877l31.82-31.82 59.943 59.94L208.79 29.973z" fill="#020202"/></svg>
-						</span>
-					</button>
+				<div class="input-field">
+					<input placeholder="example@gmail.com">
+					<button>Send invite <img src="img/iPhone/arrow-icon.png"></button>
 				</div>
      			<p>or download from</p>
      			<a href="#"><img src="img/Screen/download-button.png"></a>
@@ -217,6 +212,16 @@
 				</div>
 			</div>
 		</div>
+	</section>
+	
+	<section id="subscribe-section">
+		<h1>Subscribe our newsletters</h1>
+		<h4>You`re subscribed on our news!</h4>
+		<div class="input-field">
+			<input placeholder="Your e-mail">
+			<button>Subscribe</button>
+		</div>
+		<p>We promise to never spam you.</p>
 	</section>
 	
 	<section id="footer-section">
@@ -317,5 +322,14 @@ $(document).on('click', '.submitter', function() {
 	return false;
 });
 </script>
+<!--
+<script>
+	function toMin(){
+		var div = document.getElementById("input-field-in-use");
+		div.style.transition = "2s";
+		div.style.width = "5%";
+	}
+</script>
+-->
 </body>
 </html>
