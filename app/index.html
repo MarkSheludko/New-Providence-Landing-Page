@@ -98,20 +98,21 @@
 	
 	<section id="main-screen-section">
 		<div class="container">
-			<h1>Beaufiful interface</h1>
+			<h1 class="animation-div">Beaufiful interface</h1>
 			<img class="line" src="img/Screen/line.png">
-			<p class="animation-div">Landing screen</p>
+			<p>Landing screen</p>
 		</div>
 		<section id="screen-section">
 		  <div class="swiper-container">
 			<div class="swiper-wrapper">
-			  <div class="swiper-slide"><img src="img/Screen/screen1.png"></div>
-			  <div class="swiper-slide"><img src="img/Screen/screen2.png"></div>
 			  <div class="swiper-slide"><img src="img/Screen/screen3.png"></div>
+			  <div class="swiper-slide"><img src="img/Screen/screen2.png"></div>
+			  <div class="swiper-slide"><img src="img/Screen/screen1.png"></div>
 			  <div class="swiper-slide"><img src="img/Screen/screen4.png"></div>
 			  <div class="swiper-slide"><img class="img-mount" src="img/Screen/screen5.png"></div>
 			</div>
 		  </div>
+		  <span class="animation-div"></span>
 	</section>
 		<section id="screen-invite-section">
 			<div class="container">
@@ -127,38 +128,38 @@
 		</section>
 	</section>
 	
-	<section id="team-section">
+	<section id="team-section" class="animation-div">
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
-			  <div class="swiper-slide">
+			  <div class="swiper-slide" id="slide">
 			  	<img src="img/Team/teamperson-1.png">
 			  	<h2>New Providence is the great UI kit</h2>
 			  	<p>"Just then her struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door."</p>
 			  	<img src="img/Team/stars-icon.png">
 			  	<h6><b>Cameron dowman</b></h6>
 			  </div>
-			  <div class="swiper-slide">
+			  <div class="swiper-slide" id="slide">
 			  	<img src="img/Team/teamperson-1.png">
 			  	<h2>New Providence is the great UI kit</h2>
 			  	<p>"Just then her struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door."</p>
 			  	<img src="img/Team/stars-icon.png">
 			  	<h6><b>Cameron dowman</b></h6>
 			  </div>
-			  <div class="swiper-slide">
+			  <div class="swiper-slide" id="slide">
 			  	<img src="img/Team/teamperson-1.png">
 			  	<h2>New Providence is the great UI kit</h2>
 			  	<p>"Just then her struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door."</p>
 			  	<img src="img/Team/stars-icon.png">
 			  	<h6><b>Cameron dowman</b></h6>
 			  </div>
-			  <div class="swiper-slide">
+			  <div class="swiper-slide" id="slide">
 			  	<img src="img/Team/teamperson-1.png">
 			  	<h2>New Providence is the great UI kit</h2>
 			  	<p>"Just then her struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door."</p>
 			  	<img src="img/Team/stars-icon.png">
 			  	<h6><b>Cameron dowman</b></h6>
 			  </div>
-			  <div class="swiper-slide">
+			  <div class="swiper-slide" id="slide">
 			  	<img src="img/Team/teamperson-1.png">
 			  	<h2>New Providence is the great UI kit</h2>
 			  	<p>"Just then her struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door."</p>
@@ -172,7 +173,7 @@
   </div>
 	</section>
 	
-	<section id="buy-plan-section">
+	<section id="buy-plan-section" class="animation-div">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5">
@@ -200,12 +201,13 @@
 						</div>
 						<div class="col-lg-6">
 							<div class="first-plan">
-								<h3>Starter</h3>
-								<p class="type-of-plan"><b>Free</b></p>
-								<h5>Build your schedule every day</h5>
+								<h3>Pro</h3>
+								<p class="type-of-plan"><b>4.99</b></p>
+								<h5>Make your life better</h5>
 								<p><img src="img/Plan/succss-icon.png"><b>Unlimited events</b></p>
 								<p><img src="img/Plan/succss-icon.png"><b>Connect Dropbox & Evernote</b></p>
-								<button>Get started</button>
+								<p><img src="img/Plan/succss-icon.png"><b>Personal Assistant</b></p>
+								<button class="buy-plan-second-button">Get started</button>
 							</div>
 						</div>
 					</div>
@@ -214,7 +216,7 @@
 		</div>
 	</section>
 	
-	<section id="subscribe-section">
+	<section id="subscribe-section" class="animation-div">
 		<h1>Subscribe our newsletters</h1>
 		<h4>You`re subscribed on our news!</h4>
 		<div class="input-field">
@@ -224,7 +226,7 @@
 		<p>We promise to never spam you.</p>
 	</section>
 	
-	<section id="footer-section">
+	<section id="footer-section" class="animation-div">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5 col-md-12">
@@ -285,6 +287,7 @@
 	//Swiper
 	var swiper = new Swiper('.swiper-container', {
       slidesPerView: 4,
+	  initialSlide: 2,
       spaceBetween: 30,
       centeredSlides: true,
       pagination: {
