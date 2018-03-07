@@ -43,7 +43,7 @@ header .header-apple-button
 header .header-apple-button:hover
 	background-color: #19519e
 	color: white
-	box-shadow: 0px 0px 100px #b2b2b2
+	box-shadow: 0px 0px 70px #19519e
 
 header .header-apple-button img
 	margin-right: 0.5em
@@ -76,8 +76,9 @@ header .video-button:hover
 
 //FEATURES SECTION
 #features-section
-	padding: 5% 0% 5% 0%
-	h3
+	height: 900px
+	padding: 15% 0% 5% 0%
+	h2
 		padding: 3.5% 0% 0% 0%
 		color: #26272d
 	p
@@ -96,7 +97,6 @@ header .video-button:hover
 			color: #26272d
 			width: 30%
 			padding: 15% 0% 4% 0%
-		
 		p
 			color: #8c8f94
 			font-size: 1.30em
@@ -112,21 +112,20 @@ header .video-button:hover
 			transition: 1s
 		.col-lg-6 button:nth-child(4):hover
 			background-color: #5e9df4
-			border: 1px solid #5e9df4
+			border: 1px solid #4a85d7
+			box-shadow: 0px 0px 70px #4a85d7
 			color: white
 		.col-lg-6 button img
 			padding-left: 2em
 		.col-lg-6 button:nth-child(5)
 			color: #26272d
 			background-color: #ffffff
-			border: 1px solid #ebebeb
 			border-radius: 15px
 			margin-left: 1em
 			padding: 0.50em 1em 0.50em 1em
 			transition: 1s
 		.col-lg-6 button:nth-child(5):hover
-			background-color: #ebebeb
-			border: 2px solid #cfcfcf
+			box-shadow: 0px 0px 70px #bcbcbc
 
 //LOCATION SECTION
 #locations-section
@@ -197,7 +196,8 @@ header .video-button:hover
 	margin-left: 0.1em
 #screen-invite-section
 	background-color: #f5f5f8
-	padding: 10em 0em
+	height: 1000px
+	padding: 17% 0% 0% 0%
 	img
 		opacity: 0.5
 	h1
@@ -326,13 +326,17 @@ button
 
 #team-section
 	background-color: #ffffff
+	height: 1000px
+	padding: 5% 0% 0% 0%
 	#slide
-		opacity: 0.5
+		opacity: 0.25
+		transition: 1s
 	.swiper-slide-active
 		opacity: 1!important
 	p
+		width: 100%
 		color: #8c8f94
-		padding: 2em 0em 0.5em 0em
+		padding: 1.75em 2em 0.5em 2em
 	img
 		padding: 0
 		margin: 0!important
@@ -400,6 +404,7 @@ button
 				font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif
 				background-color: #267df4
 				border: 1px solid #267df4
+				box-shadow: 0px 0px 5px #267df4
 				color: white
 				border-radius: 25px
 				padding: 0.6em 5em
@@ -409,6 +414,7 @@ button
 				background-color: white
 				color: #267df4
 				border: 1px solid #267df4
+				box-shadow: 0px 0px 150px 5px #267df4
 			.buy-plan-second-button
 				font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif
 				background-color: #267df4
@@ -483,9 +489,31 @@ button
 	button img
 		border: none
 	.col-lg-5
+		a img
+			cursor: pointer
 		ul
 			margin-top: 2.5em
 			padding: 0
+			a img
+				transition: 1s
+			a:nth-child(1) img:hover
+				box-shadow: 0px 0px 70px #418aee
+				background-color: #418aee
+			a:nth-child(2) img:hover
+				box-shadow: 0px 0px 70px #3B5998
+				background-color: #3B5998
+			a:nth-child(3) img:hover
+				box-shadow: 0px 0px 70px #ec4b4b
+				background-color: #ec4b4b
+			a:nth-child(4) img:hover
+				box-shadow: 0px 0px 70px #5545f0
+				background-color: #5545f0
+			a:nth-child(5) img:hover
+				box-shadow: 0px 0px 70px #f93434
+				background-color: #f93434
+			a:nth-child(6) img:hover
+				box-shadow: 0px 0px 70px #27a1ff
+				background-color: #27a1ff
 	.col-lg-2
 		ul
 			width: 90%
