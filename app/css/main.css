@@ -415,6 +415,37 @@ button {
     padding-bottom: 1em; }
   #buy-plan-section h5 {
     color: #26272d; }
+  #buy-plan-section .toggle {
+    border: 1px solid #dadbdc;
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
+    width: 265px;
+    height: 53px; }
+    #buy-plan-section .toggle .white-obj {
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+      background-color: white;
+      -webkit-border-radius: 25px;
+              border-radius: 25px;
+      padding: 1px 5px 5px 2px;
+      position: absolute; }
+    #buy-plan-section .toggle p {
+      padding: 0.75em 0em 0em 0em;
+      z-index: 3 !important;
+      position: absolute;
+      cursor: pointer;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+      color: #dadbdc; }
+      #buy-plan-section .toggle p .individual {
+        margin-right: 50px;
+        margin-left: 30px;
+        -webkit-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        color: black; }
   #buy-plan-section p {
     color: #8c8f94;
     font-size: 1.3em;
@@ -512,6 +543,46 @@ button {
     #buy-plan-section .col-lg-7 .first-plan:hover h3 {
       padding: 3.15em 0em 0.5em 0em; }
 
+@-webkit-keyframes pulsein {
+  0%, 100% {
+    top: 0px;
+    height: 40px;
+    width: 40px; }
+  50% {
+    top: 6px;
+    height: 28px;
+    width: 52px; } }
+
+@keyframes pulsein {
+  0%, 100% {
+    top: 0px;
+    height: 40px;
+    width: 40px; }
+  50% {
+    top: 6px;
+    height: 28px;
+    width: 52px; } }
+
+@-webkit-keyframes pulseout {
+  0%, 100% {
+    top: 0px;
+    height: 40px;
+    width: 40px; }
+  50% {
+    top: 6px;
+    height: 28px;
+    width: 52px; } }
+
+@keyframes pulseout {
+  0%, 100% {
+    top: 0px;
+    height: 40px;
+    width: 40px; }
+  50% {
+    top: 6px;
+    height: 28px;
+    width: 52px; } }
+
 #subscribe-section {
   background-color: #ffffff;
   text-align: center;
@@ -605,6 +676,7 @@ button {
       color: #a5a7ab;
       padding: 0.2em 0em; }
     #footer-section .col-lg-2 ul b {
+      text-transform: uppercase;
       color: black; }
     #footer-section .col-lg-2 ul a {
       text-decoration: none;
@@ -697,6 +769,8 @@ button {
     padding: 5% 0% 0% 0%; }
     #white-iphone-section .row .col-xs-3 {
       opacity: 0.40; }
+  #buy-plan-section {
+    height: auto !important; }
   #footer-section .col-lg-5 {
     text-align: center; }
     #footer-section .col-lg-5 p {
