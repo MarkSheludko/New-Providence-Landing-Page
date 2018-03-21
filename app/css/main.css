@@ -404,7 +404,7 @@ button {
     color: #26272d; }
 
 #buy-plan-section {
-  height: 1000px;
+  height: 1100px;
   background-color: #f5f5f8;
   padding-top: 10em;
   padding-bottom: 10em; }
@@ -586,7 +586,7 @@ button {
 #subscribe-section {
   background-color: #ffffff;
   text-align: center;
-  padding: 7em 0em; }
+  padding: 9.85em 0em 7em 0em; }
   #subscribe-section h4 {
     margin-top: 2.5em;
     margin-bottom: 1.5em;
@@ -771,6 +771,8 @@ button {
       opacity: 0.40; }
   #buy-plan-section {
     height: auto !important; }
+  #screen-invite-section .input-field button {
+    margin-left: 0%; }
   #footer-section .col-lg-5 {
     text-align: center; }
     #footer-section .col-lg-5 p {
