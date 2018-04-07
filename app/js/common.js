@@ -29,6 +29,14 @@ $(function() {
   });
 
 });
+//MENU
+(function($){
+  $(function() {
+    $('.menu__icon').on('click', function() {
+      $(this).closest('.menu').toggleClass('menu_state_open');
+    });
+  });
+})(jQuery);
 // Popup video
 $('.magnific').magnificPopup({
   type:'image',
@@ -44,6 +52,3 @@ $('.magnific-youtube, .magnific-vimeo').magnificPopup({
   preloader: false,
   fixedContentPos: false
 });
-
-// BUY PLAN SECTION
-

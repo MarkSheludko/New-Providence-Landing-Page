@@ -23,8 +23,29 @@
 </head>
 <body>
 	<header class="animation-div">
+		<div class="menu">
+			<div class="menu__icon">
+				<span></span>
+			    <span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<div class="menu__links">
+				<a class="menu__links-item header-main-logo" href="#">Home</a>
+				<a class="menu__links-item" href="#">Tour</a>
+				<a class="menu__links-item" href="#">Features</a>
+				<a class="menu__links-item" href="#">Pricing</a>
+				<a class="menu__links-item" href="#">Help</a>
+				<a class="menu__links-item" href="#">Contacts</a>
+				<a class="menu__links-item header-apple-button" href="#"><img src="img/Header/apple-icon.png">Get App</a>
+			</div>
+		</div>
 		<div class="container-fluid">
 			<div class="container">
+
+			
+
 			<nav>
 				<ul class="snip1241">
 					<li><a href="#">Tour</a></li>
@@ -35,7 +56,8 @@
 					<li><a href="#">Contacts</a></li>
 					<li><a class="header-apple-button" href="#"><img src="img/Header/apple-icon.png"> Get App</a></li>
 				</ul>
-				</nav>
+			</nav>
+
 			<h1>What happens tomorrow?</h1>
 			<p>The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convidial.</p>
 			<div class="wow fadeIn">
@@ -180,6 +202,11 @@
 					<h1>Choose your perfect plan</h1>
 					<h5><b>You are</b></h5>
 					
+					<div class="toggle">
+						<img src="img/Plan/button.png" id="white-obj" class="white-obj">
+						<p><span id="individual" class="individual" onclick="individual()">Individual</span><span id="company" class="company" onclick="company()">Company</span></p>
+					</div>
+					
 					<p>Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
 					<span class="question-span">
 						<p>Have a bigger team?
@@ -192,7 +219,7 @@
 						<div class="col-lg-6">
 							<div class="first-plan">
 								<h3>Starter</h3>
-								<p class="type-of-plan"><b>Free</b></p>
+								<p class="type-of-plan" id="type"><b>0$</b></p>
 								<h5>Build your schedule every day</h5>
 								<p><img src="img/Plan/succss-icon.png"><b>Unlimited events</b></p>
 								<p><img src="img/Plan/succss-icon.png"><b>Connect Dropbox & Evernote</b></p>
@@ -202,7 +229,7 @@
 						<div class="col-lg-6">
 							<div class="first-plan">
 								<h3>Pro</h3>
-								<p class="type-of-plan"><b>4.99</b></p>
+								<p class="type-of-plan" id="type2"><b>4.99$</b></p>
 								<h5>Make your life better</h5>
 								<p><img src="img/Plan/succss-icon.png"><b>Unlimited events</b></p>
 								<p><img src="img/Plan/succss-icon.png"><b>Connect Dropbox & Evernote</b></p>
@@ -262,11 +289,11 @@
 				</div>
 				<div class="col-lg-2 col-md-4 col-xs-4">
 					<ul>
-						<li><b>About us</b></li>
-						<li><a href="#">About us</a></li>
-						<li><a href="#">Features</a></li>
-						<li><a href="#">Privacy police</a></li>
-						<li><a href="#">Terms & Conditions</a></li>
+						<li><b>Support</b></li>
+						<li><a href="#">F. A. Q.</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">Live chat</a></li>
+						<li><a href="#">Phone call</a></li>
 					</ul>
 				</div>
 			</div>
@@ -284,7 +311,23 @@
 		</div>
 	</section>
 <script>
-	//Swiper
+// Popup video
+$('.magnific').magnificPopup({
+  type:'image',
+  removalDelay: 300,
+  mainClass: 'mfp-fade'
+});
+  
+$('.magnific-youtube, .magnific-vimeo').magnificPopup({
+  disableOn: 700,
+  type: 'iframe',
+  mainClass: 'mfp-fade',
+  removalDelay: 300,
+  preloader: false,
+  fixedContentPos: false
+});
+</script>
+<script>
 	var swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
 	  initialSlide: 2,
@@ -299,40 +342,56 @@
         prevEl: '.swiper-button-prev',
       },
     });
-	
-//2 version
-//	var swiper = new Swiper('.swiper-container', {
-//	  slidesPerView: 3,
-//      spaceBetween: 30,
-//      centeredSlides: true,
-//      autoplay: {
-//        delay: 2500,
-//        disableOnInteraction: false,
-//      },
-//      pagination: {
-//        el: '.swiper-pagination',
-//        clickable: true,
-//      },
-//      navigation: {
-//        nextEl: '.swiper-button-next',
-//        prevEl: '.swiper-button-prev',
-//      },
-//    });
 </script>
 <script>
-$(document).on('click', '.submitter', function() {
-	$(this).addClass('clicked');;
-	return false;
-});
+	$(document).on('click', '.submitter', function() {
+		$(this).addClass('clicked');;
+		return false;
+	});
 </script>
-<!--
 <script>
-	function toMin(){
-		var div = document.getElementById("input-field-in-use");
-		div.style.transition = "2s";
-		div.style.width = "5%";
+	function company(){
+		var white = document.getElementById("white-obj");
+		var individual = document.getElementById("individual");
+		var company = document.getElementById("company");
+		var p = document.getElementById("type");
+		var p2 = document.getElementById("type2");
+		
+		white.style.marginLeft = "125px";
+		individual.style.color = "#dadbdc";
+		company.style.color = "black";
+		p.innerHTML = "<b>9.99$</b>";
+		p2.innerHTML = "<b>14.99$</b>";
+	}
+	function individual(){
+		var white = document.getElementById("white-obj");
+		var individual = document.getElementById("individual");
+		var company = document.getElementById("company");
+		var p = document.getElementById("type");
+		var p2 = document.getElementById("type2");
+		
+		white.style.marginLeft = "0";
+		individual.style.color = "black";
+		company.style.color = "#dadbdc";
+		p.innerHTML = "<b>0$</b>";
+		p2.innerHTML = "<b>4.99$</b>";
 	}
 </script>
--->
+<script>
+	$(document).ready(function() {
+	  return $(".container-for-switcher").on("click", function() {
+		return $(".redBlock").toggleClass("rent");
+	  });
+	});
+</script>
+<script>	
+	(function($){
+	  $(function() {
+		$('.menu__icon').on('click', function() {
+		  $(this).closest('.menu').toggleClass('menu_state_open');
+		});
+	  });
+	})(jQuery);
+</script>
 </body>
 </html>
